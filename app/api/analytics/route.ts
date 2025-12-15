@@ -56,7 +56,7 @@ export async function GET(request: NextRequest) {
         ],
         dimensions: [{ name: 'pageTitle' }],
         metrics: [{ name: 'screenPageViews' }],
-        limit: 10,
+        limit: '10',
       },
       auth: oauth2Client,
     })
@@ -73,7 +73,7 @@ export async function GET(request: NextRequest) {
         ],
         dimensions: [{ name: 'country' }],
         metrics: [{ name: 'activeUsers' }],
-        limit: 10,
+        limit: '10',
       },
       auth: oauth2Client,
     })
