@@ -22,6 +22,9 @@ export const authOptions: NextAuthOptions = {
         token.accessToken = account.access_token
         token.refreshToken = account.refresh_token
       }
+
+      console.log('JWT Token:', token)
+
       return token
     },
     async session({ session, token }) {
